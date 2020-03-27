@@ -1,3 +1,7 @@
 node_modules
+
 client/component/help/secret.js
+
+.DS_Store
+
 */.DS_Store
