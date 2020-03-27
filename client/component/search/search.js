@@ -55,9 +55,7 @@ class SearchList {
     this.dom.area.navbar.empty().append(menubar);
   }
   handlePageChange(navbar, nav) {
-    if(nav.data.link == "MAP"){
-      localStorage.setItem("tickets",JSON.stringify(this.events));
-    }
+
     this.navBar.callbacksChangePages(navbar, nav)
   }
 
@@ -80,7 +78,6 @@ class SearchList {
     this.handleChangeToDetailPage(ticket)
   }
   handleChangeToDetailPage(ticket) {
-    localStorage.setItem('current-event', JSON.stringify(ticket.data.id));
     self.location = "details.html";
   }
 

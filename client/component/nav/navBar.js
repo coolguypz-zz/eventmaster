@@ -109,19 +109,18 @@ class NavBar {
   handleInputSearch(navBar) {
     console.log("navBar: ", navBar);
     console.log(this.dom.inputSearch.val());
-    var inputVal = this.dom.inputSearch.val()
+    this.inputVal = this.dom.inputSearch.val()
     $.ajax({
       method: "GET",
-      url: `https://app.ticketmaster.com/discovery/v2/venues.json?keyword=${inputVal}&apikey=C0p1JrHhaLuA2ean7zga5dZO32rQlNce`,
+      url: `https://app.ticketmaster.com/discovery/v2/venues.json?keyword=${this.inputVal}&apikey=C0p1JrHhaLuA2ean7zga5dZO32rQlNce`,
       dataType: "json",
     }).done(this.processHandleInputSearch)
       .fail(this.failProcessData);
   }
   processHandleInputSearch(res) {
-    console.log("navBar - data: ", res._links.self);
-    var selfLinks = res._links.self
-    localStorage.setItem("self-links", JSON.stringify(selfLinks));
-    self.location = "./search.html";
+    // console.log("navBar - data: ", res._links.self);
+    // var selfLinks = res._links.self
+    // self.location = `www.google.com?search=${this.inputVal}`;
   }
   handleNavBarSearch(e) {
     if (e) e.preventDefault();
