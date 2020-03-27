@@ -1,0 +1,84 @@
+body {
+  background: #8360c3;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2ebf91), to(#8360c3));
+  background: linear-gradient(to right, #2ebf91, #8360c3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+}
+
+/** List CSS */
+.container {
+  text-align: center;
+}
+
+.title {
+  height: 8vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.listArea {
+  width: 100%;
+  /* height: 450px; */
+  height: auto;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+.list {
+  height: 12vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.imgDiv {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 10vh;
+  background-position: center;
+}
+
+.img-div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  height: 150px;
+}
+
+.new-release {
+  background: rgba(222, 230, 232, 0.335);
+  border-radius: 5px;
+}
+
+.newRelease {
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  border-bottom: 1px solid #c5ced6;
+  cursor: pointer;
+}
+
+.col-left {
+  display: inline-block;
+  width: 49%;
+  border-radius: 5px;
+}
+
+.col-right {
+  display: inline-block;
+  width: 49%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,64 @@
+body {
+  background: #8360c3;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2ebf91), to(#8360c3));
+  background: linear-gradient(to right, #2ebf91, #8360c3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#map {
+  margin-top: 5vh;
+  height: 350px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  border-radius: 8px;
+}
+
+.rightDiv {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35vh;
+  border-radius: 8px;
+}
+
+.cartButton {
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+  background-color: #f3aa3c;
+  color: #070707;
+  border-radius: 5px;
+  margin: 2%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.cartButton:hover {
+  background-color: #f2f3f3;
+}
+
+.cartButton:active {
+  color: #362da7;
+}
+
+.select {
+  display: inline-block;
+  height: 40px;
+  width: 10vw;
+}
+
+.no-spinners {
+  width: 50px;
+  height: 40px;
+  margin: 5%;
+  text-align: center;
+}
+
+.button-disable {
+  pointer-events: none;
+  opacity: 0.4;
+}
+/*# sourceMappingURL=style.css.map */

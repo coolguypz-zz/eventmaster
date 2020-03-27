@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./component/nav/nav.css">
+  <link rel="stylesheet" href="./component/map/style.css">
+  <link rel="stylesheet" href="./component/footer/footer.css">
+  <title>Event Master</title>
+</head>
+
+<body>
+  <div class="navbarContainer"></div>
+  <div class="container">
+    <div class="row">
+      <form class="needs-validation">
+        <div class="form-row">
+          <div class="col-md-2 mb-3">
+            <input type="text" class="form-control" id="name" placeholder="Event Key Word" required>
+          </div>
+          <div class="col-md-2 mb-3">
+            <input type="text" class="form-control" id="city" placeholder="Event Zip Code" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <select class="custom-select" id="state" required>
+              <option selected disabled>Choose State ...</option>
+            </select>
+          </div>
+          <div class="col-md-2 mb-3">
+            <button class="btn btn-primary" id="submitButton" type="button">Submit form</button>
+          </div>
+          <div class="col-md-2 mb-3">
+            <button class="btn btn-info" id="show-more" type="button">Show more</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    </footer>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsPh2RZpO0D1Q_mUpiR3wfhQQhZbcmpOY">
+  </script>
+
+  <script type="text/javascript" src="./component/help/secret.js"></script>
+
+  <script type="text/javascript" src="./component/nav/nav.js"></script>
+  <script type="text/javascript" src="./component/nav/navBar.js"></script>
+  <script type="text/javascript" src="./component/footer/footer.js"></script>
+
+
+  <script type="text/javascript" src="./component/map/map.js"></script>
+
+</body>
+
+</html>

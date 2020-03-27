@@ -1,0 +1,15 @@
+.footer {
+  border-top: 1px solid black;
+  margin-top: 2vh;
+}
+
+.footer .last-row {
+  border-top: 1px solid black;
+}
+
+.footer .firstchild {
+  letter-spacing: 10px;
+  color: #007bff;
+  font-style: italic;
+}
+/*# sourceMappingURL=footer.css.map */

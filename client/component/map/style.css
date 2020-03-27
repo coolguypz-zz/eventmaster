@@ -1,0 +1,30 @@
+body {
+  background: #8360c3;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2ebf91), to(#8360c3));
+  background: linear-gradient(to right, #2ebf91, #8360c3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#map {
+  height: 600px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+  border-radius: 8px;
+}
+
+.inforWindow {
+  width: 150px;
+  min-height: 40px;
+  cursor: pointer;
+  color: black;
+}
+
+.inforWindow:hover {
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
